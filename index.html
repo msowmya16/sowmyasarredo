@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sowmya's Arredo</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+
+  <div class="logo">
+    <img src="images/logo.png" alt="">
+    <h2>Sowmya's Arredo</h2>
+  </div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#" onclick="toggleCatalog()">Products</a></li>
+    <li><a href="#bespoke">Bespoke</a></li>
+        
+    <li><a href="#contact">Contact</a></li>
+    
+</section>
+</ul>
+
+  <div class="right-section">
+    <i class="fa-solid fa-cart-shopping cart-icon"></i>
+    <i class="fa-solid fa-bars menu-btn" id="menuBtn"></i>
+  </div>
+ 
+</nav>
+
+<!-- CATALOG OVERLAY -->
+<div class="minimal-catalog-overlay" id="easternCatalog">
+
+  <div class="catalog-inner-wrapper">
+
+    <div class="catalog-column">
+      <h3 class="category-heading">Living</h3>
+      <ul class="category-item-links">
+        <li><a href="#">Luxury Sofas</a></li>
+        <li><a href="#">Coffee Tables</a></li>
+        <li><a href="#">TV Units</a></li>
+      </ul>
+    </div>
+
+    <div class="catalog-column">
+      <h3 class="category-heading">Bedroom</h3>
+      <ul class="category-item-links">
+        <li><a href="#">Beds</a></li>
+        <li><a href="#">Wardrobes</a></li>
+        <li><a href="#">Night Stands</a></li>
+      </ul>
+    </div>
+
+    <div class="catalog-column">
+      <h3 class="category-heading">Dining</h3>
+      <ul class="category-item-links">
+        <li><a href="#">Dining Sets</a></li>
+        <li><a href="#">Dining Chairs</a></li>
+        <li><a href="#">Bar Cabinets</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- 🖼️ HERO AUTOMATIC SLIDESHOW SECTION -->
+<section class="hero">
+    <!-- SLIDE 1: BRAND INTRODUCTION (The New Slide) -->
+  <div class="slide active">
+    <img src="images/1stslide.png" alt="Aesthetic Background">
+    <div class="overlay-brand">
+      <h1 class="brand-title">Sowmya's Arredo</h1>
+      <p>
+        Crafting Comfort, Designing Dreams
+      </p>
+    </div>
+  </div>
+    
+  <div class="slide">
+    <img src="images/waitingroom.jfif" alt="Waiting Room">
+    <div class="overlay">
+      <h1>Elegant Waiting Rooms</h1>
+      <p>Modern comfort for your space</p>
+    </div>
+    
+  </div>
+
+  <div class="slide">
+    <img src="images/garden.jfif" alt="Garden Space">
+    <div class="overlay">
+      <h1>Luxury Garden Spaces</h1>
+      <p>Nature meets design</p>
+    </div>
+  </div>
+
+  <div class="slide">
+    <img src="images/kitchen.jfif" alt="Kitchen">
+    <div class="overlay">
+      <h1>Modern Kitchens</h1>
+      <p>Designed for elegance & function</p>
+    </div>
+  </div>
+
+  <div class="arrow left" onclick="changeSlide(-1)">&#10094;</div>
+  <div class="arrow right" onclick="changeSlide(1)">&#10095;</div>
+
+</section>
+<section id="catalog">
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="images/sofa.jpg">
+
+      <div class="info">
+        <h3>Modern Sofa</h3>
+        <p>₹18,999</p>
+        <small>⭐ 4.5 (210)</small>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/drawer.jfif">
+
+      <div class="info">
+        <h3>Drawer Cabinet</h3>
+        <p>₹8,499</p>
+        <small>⭐ 4.2 (98)</small>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/teapoint.jfif">
+
+      <div class="info">
+        <h3>Tea Table</h3>
+        <p>₹5,999</p>
+        <small>⭐ 4.3 (76)</small>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/stand.jfif">
+
+      <div class="info">
+        <h3>TV Stand</h3>
+        <p>₹12,999</p>
+        <small>⭐ 4.4 (134)</small>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/bookshelves.jpg">
+
+      <div class="info">
+        <h3>Bookshelves</h3>
+        <p>₹14,499</p>
+        <small>⭐ 4.6 (189)</small>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/dining.jpg">
+
+      <div class="info">
+        <h3>Dining Set</h3>
+        <p>₹24,999</p>
+        <small>⭐ 4.7 (320)</small>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+        <!-- BESPOKE SECTION -->
+
+<section class="bespoke" id="bespoke">
+
+    <div class="bespoke-heading">
+        <h2>Bespoke Spaces</h2>
+        <p>
+            Crafted uniquely for your lifestyle and space.
+        </p>
+    </div>
+
+    <!-- PROCESS CARDS -->
+
+    <div class="process-container">
+
+        <div class="process-card">
+            <i class="fa-solid fa-comments"></i>
+            <h3>Consultation</h3>
+            <p>Understanding your vision and requirements.</p>
+        </div>
+
+        <div class="process-card">
+            <i class="fa-solid fa-pencil-ruler"></i>
+            <h3>Design Planning</h3>
+            <p>Creating layouts tailored to your space.</p>
+        </div>
+
+        <div class="process-card">
+            <i class="fa-solid fa-couch"></i>
+            <h3>Material Selection</h3>
+            <p>Choosing premium materials and finishes.</p>
+        </div>
+
+        <div class="process-card">
+            <i class="fa-solid fa-house"></i>
+            <h3>Final Installation</h3>
+            <p>Delivering elegant interiors with perfection.</p>
+        </div>
+
+    </div>
+<div class="comparison-section">
+
+    <div class="comparison-container">
+
+        <!-- AFTER IMAGE -->
+
+        <img src="images/after.png" class="after-img">
+
+        <!-- BEFORE IMAGE -->
+
+        <div class="before-wrapper">
+
+            <img src="images/before.jpg" class="before-img">
+
+        </div>
+
+        <!-- SLIDER -->
+
+        <input type="range"
+               min="0"
+               max="100"
+               value="50"
+               class="slider"
+               id="slider">
+
+    </div>
+
+</div>
+   
+    <!-- CTA -->
+
+    <div class="bespoke-cta">
+        <h2>Create Your Bespoke Space</h2>
+
+        <p>
+            Tailored furniture 
+            for your lifestyle.
+        </p>
+
+ <a class="cta-btn"
+href="https://mail.google.com/mail/?view=cm&fs=1&to=madanakari67@gmail.com&su=Consultation%20Request"
+target="_blank">
+  Book Consultation
+</a>
+    </div>
+    
+
+</section>
+
+<section id="contact" class="contact-section">
+    <h2>Get in Touch</h2>
+    <div class="contact-details">
+        
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=madanakari67@gmail.com" target="_blank" class="social-icon">
+    <i class="fa-solid fa-envelope"></i>
+</a>
+
+        <a href="https://github.com/msowmya16" target="_blank" class="social-icon">
+            <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="tel:+919876543210" class="social-icon">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+
+    </div>
+</section>
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <h3>Sowmya's Arredo</h3>
+            <p>Crafting Comfort, Designing Dreams.</p>
+        </div>
+        
+       
+
+        <div class="footer-social">
+            <h4>Connect</h4>
+            <div class="social-icons">
+                <a href="https://github.com/msowmya16" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:madanakari67@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p> 2026 Sowmya's Arredo. All rights reserved.</p>
+    </div>
+</footer>
+
+<div id="popup"></div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
